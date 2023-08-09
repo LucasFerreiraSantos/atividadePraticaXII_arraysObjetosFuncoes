@@ -40,7 +40,8 @@ const data = [
 console.log(`O total de pessoas é ${data.length}.`)
 
 // 2. Imprima no console a quantidade de pessoas pessoas do sexo Feminino.
-
+const pessoasFeminino = (data.filter(pessoa => pessoa.sexo === 'F'))
+console.log(pessoasFeminino)
 
 // 3. Imprima no console a soma do salário de todas as pessoas.
 
