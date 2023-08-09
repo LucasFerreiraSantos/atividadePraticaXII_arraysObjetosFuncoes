@@ -37,23 +37,29 @@ const data = [
 ];
 
 // 1. Imprima no console a quantidade de pessoas Total.
-console.log(`O total de pessoas é ${data.length}.`)
+const totalPessoas = data.length
+console.log(`O total de pessoas é ${totalPessoas}.`)
 
 // 2. Imprima no console a quantidade de pessoas pessoas do sexo Feminino.
-const pessoasFeminino = (data.filter(pessoa => pessoa.sexo === 'F'))
+const pessoasFeminino = data.filter(pessoa => pessoa.sexo === 'F')
 console.log(pessoasFeminino)
 
 // 3. Imprima no console a soma do salário de todas as pessoas.
-
+const somaSalarios = data.reduce((total, pessoa) => total + pessoa.salario, 0)
+console.log(`A soma de todos os salários é ${somaSalarios.toFixed(2)}.`)
 
 // 4. Imprima no console a média do salário de todas as pessoas.
-
+const mediaSalarios = somaSalarios / totalPessoas
+console.log(`A média de todos os salários é ${mediaSalarios.toFixed(2)}.`)
 
 // 5. Imprima no console a soma do salário de todos as pessoas do sexo Masculino.
-
+const pessoasMasculino = data.filter(pessoa => pessoa.sexo === 'M')
+console.log(pessoasMasculino)
 
 // 6. Imprima no console a média do salário de todas as pessoas do sexo Masculino.
-
+const somaSalariosMasculinos = pessoasMasculino.reduce((total, pessoa) => total + pessoa.salario, 0)
+const mediaSalariosMasculino = somaSalariosMasculinos / pessoasMasculino.length
+console.log(`A média de todos os salários masculinos é ${mediaSalariosMasculino.toFixed(2)}.`)
 
 // 7. Utilize a função Some, para descobrir se existe algum salário superior a R$ 7.000, imprima verdadeiro no console caso exista, caso contrário falso.
 
