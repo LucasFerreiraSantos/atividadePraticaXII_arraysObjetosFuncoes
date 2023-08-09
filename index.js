@@ -62,12 +62,15 @@ const mediaSalariosMasculino = somaSalariosMasculinos / pessoasMasculino.length
 console.log(`A média de todos os salários masculinos é ${mediaSalariosMasculino.toFixed(2)}.`)
 
 // 7. Utilize a função Some, para descobrir se existe algum salário superior a R$ 7.000, imprima verdadeiro no console caso exista, caso contrário falso.
-
+console.log(data.some(pessoa => pessoa.salario > 7000))
 
 // 8. Utilize a função findIndex, para descobrir a posição da pessoa de nome 'Eva Trindade'.
-
+console.log(data.findIndex(pessoa => pessoa.nome === 'Eva Trindade'))
 
 // 9. Utilize a função filter, para filtrar todas pessoas que o nome possua o sobrenome "Silva".
-
+const pessoaNomeSilva = data.filter(pessoas => pessoas.nome.includes('Silva'))
+console.log(pessoaNomeSilva)
 
 // 10. Imprima os nomes utilizando o MAP
+const nomes = data.map(pessoas => pessoas.nome)
+console.log(nomes)
