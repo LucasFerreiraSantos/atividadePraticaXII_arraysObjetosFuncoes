@@ -37,21 +37,30 @@ const data = [
 ];
 
 // 1. Imprima no console a quantidade de pessoas Total.
+console.log(`O total de pessoas é ${data.length}.`)
+
+// 2. Imprima no console a quantidade de pessoas pessoas do sexo Feminino.
 
 
-// 2. Imprima no console a quantidade de pessoas pessoas do sexo
-// Feminino.
 // 3. Imprima no console a soma do salário de todas as pessoas.
+
+
 // 4. Imprima no console a média do salário de todas as pessoas.
-// 5. Imprima no console a soma do salário de todos as pessoas do sexo
-// Masculino
-// 6. Imprima no console a média do salário de todas as pessoas do sexo
-// Masculino
-// 7. Utilize a função Some, para descobrir se existe algum salário
-// superior a R$ 7.000, imprima verdadeiro no console caso exista, caso
-// contrário falso.
-// 8. Utilize a função findIndex, para descobrir a posição da pessoa de
-// nome 'Eva Trindade'.
-// 9. Utilize a função filter, para filtrar todas pessoas que o nome possua o
-// sobrenome "Silva".
+
+
+// 5. Imprima no console a soma do salário de todos as pessoas do sexo Masculino.
+
+
+// 6. Imprima no console a média do salário de todas as pessoas do sexo Masculino.
+
+
+// 7. Utilize a função Some, para descobrir se existe algum salário superior a R$ 7.000, imprima verdadeiro no console caso exista, caso contrário falso.
+
+
+// 8. Utilize a função findIndex, para descobrir a posição da pessoa de nome 'Eva Trindade'.
+
+
+// 9. Utilize a função filter, para filtrar todas pessoas que o nome possua o sobrenome "Silva".
+
+
 // 10. Imprima os nomes utilizando o MAP
